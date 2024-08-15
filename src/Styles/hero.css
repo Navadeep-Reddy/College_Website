@@ -1,0 +1,8 @@
+.heroic{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(rgb(135, 142, 186, 1), rgb(135, 142, 186, 0.7)), url('/public/Hero.jpg');
+    background-position: center;
+    background-size: cover;
+    color: #f7f8ff;
+}

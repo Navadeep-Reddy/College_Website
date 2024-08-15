@@ -1,5 +1,5 @@
 import React from 'react';
-import '/src/hero.css';
+import '/src/Styles/hero.css';
 import { MdArrowCircleRight } from "react-icons/md";
 const Hero = () => {
   return (
