@@ -1,10 +1,11 @@
 import React from 'react'
 import '/src/Styles/Academics.css'
-import Eng from '/public/Academics/Engineering.jpg'
-import Man from '/public/Academics/Management.jpg'
-import Adv from '/public/Academics/AdvCar.jpg'
-import Inc from '/public/Academics/incubation.jpg'
-import Res from '/public/Academics/Research.jpg'
+import Eng from '/Academics/Engineering.jpg'
+import Man from '/Academics/Management.jpg'
+import Adv from '/Academics/AdvCar.jpg'
+import Inc from '/Academics/incubation.jpg'
+import Res from '/Academics/Research.jpg'
+import Title from '/home/navadeep/Documents/Code/React/College_Website/src/components/Title.jsx'
 import { BsGear } from "react-icons/bs";
 import { GrUserManager } from "react-icons/gr";
 import { SiGoogletagmanager } from "react-icons/si";
@@ -14,6 +15,7 @@ import { MdOutlineScience } from "react-icons/md";
 const Academics = () => {
   return (
     <>
+    <Title Title={"OUR PROGRAM"} SubTitle={"What We Offer"} />
     <div className= 'container'>
       <div className='program'>
         <img src = {Eng}></img>
@@ -39,10 +41,10 @@ const Academics = () => {
         </div>
       </div>
 
-    </div>
     
-    <div className='container1'>
-      <div className='program'>
+      </div>
+      <div className='container1'>
+      <div className='program bott'>
         <img src = {Inc}></img>
         <div className='caption'>
           <SiFuturelearn className='text-white' />
@@ -50,7 +52,7 @@ const Academics = () => {
         </div>
       </div>
 
-      <div className='program'>
+      <div className='program bott'>
         <img src = {Res}></img>
         <div className='caption'>
           <MdOutlineScience className='text-white' />
@@ -58,6 +60,7 @@ const Academics = () => {
         </div>
       </div>
     </div>
+    
     </>
   )
 }
