@@ -46,7 +46,7 @@
     padding: 40px;
     border-radius: 10px;
     line-height: 1.4;
-    height: 80%; /* This ensures all boxes take full height of their container */
+    height: 100%; /* This ensures all boxes take full height of their container */
     display: flex;
     flex-direction: column;
     overflow: hidden;

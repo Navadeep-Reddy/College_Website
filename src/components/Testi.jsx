@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import { FaArrowCircleRight } from "react-icons/fa";
 import { FaArrowCircleLeft } from "react-icons/fa";
 import Navadeep from '/People/Navadeep.jpg'
@@ -8,12 +8,29 @@ import Grand from '/People/grand.jpg'
 import '/src/Styles/Testi.css'
 
 const Testi = () => {
+  const slider = useRef();  
+  let X_Value = 0;
+  
+  const MoveLeft = () => {
+    if (X_Value <= -25){
+        X_Value += 25;
+    }
+    slider.current.style.transform =  `translateX(${X_Value}%)`
+  }
+
+
+  const MoveRight = () => {
+    if (X_Value > -50){
+        X_Value -= 25;
+    }
+    slider.current.style.transform =  `translateX(${X_Value}%)`
+  }  
   return (
     <div className='testimonials '>
-        <FaArrowCircleLeft className='left-butt text-Accent'/>
-        <FaArrowCircleRight className='right-butt text-Accent'/>
+        <FaArrowCircleLeft className='left-butt text-Accent' onClick={MoveLeft}/>
+        <FaArrowCircleRight className='right-butt text-Accent' onClick={MoveRight}/>
         <div className='slider'>
-            <ul>
+            <ul ref = {slider}>
                 <li>
                     <div className='user-box'>
                         <div className='user-info'>
@@ -54,7 +71,7 @@ const Testi = () => {
                             </div>
                         </div>
                         <p>
-                        Man is meant to save people, not kill them. Cripple them sometimes? Sure, but he does not kill. The defining moment in his life in when his parents were taken away from him. He never wants another person to go through that. Even killing a criminal would be inflicting the same sense of loss and trauma if that criminal had loved ones.
+                        Man is meant to save people, not kill them. Cripple them sometimes? Sure, but he does not kill. The defining moment in his life in when his parents were taken away from him. He never wants another person to go through that. 
                         </p>
                     </div>
                 </li>
