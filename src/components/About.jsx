@@ -7,7 +7,7 @@ const About = () => {
     <div className='mt-20 w-2/3 mx-auto flex container'>
       <div className='about-left '>
         <img src = {AboutImg} className='border rounded-xl imag'></img>
-        <div className='play-icon'><FaCirclePlay /></div>    
+        <div className='play-icon'><FaCirclePlay className='play-butt'/></div>    
       </div>
       <div className='about-right flex flex-col justify-center'>
         <p className='font-semibold text-Accent'>ABOUT UNIVERSITY</p>

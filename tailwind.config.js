@@ -8,6 +8,7 @@ export default {
     extend: {
       colors: {
         Dom : "#878eba",
+        DomDark: '#6d76ab',
         Comp : "#f7f8ff",
         Accent: "#0d4ba0",
       },
