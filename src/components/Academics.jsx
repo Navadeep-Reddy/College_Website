@@ -5,7 +5,6 @@ import Man from '/Academics/Management.jpg'
 import Adv from '/Academics/AdvCar.jpg'
 import Inc from '/Academics/incubation.jpg'
 import Res from '/Academics/Research.jpg'
-import Title from '/home/navadeep/Documents/Code/React/College_Website/src/components/Title.jsx'
 import { BsGear } from "react-icons/bs";
 import { GrUserManager } from "react-icons/gr";
 import { SiGoogletagmanager } from "react-icons/si";
@@ -15,7 +14,7 @@ import { MdOutlineScience } from "react-icons/md";
 const Academics = () => {
   return (
     <>
-    <Title Title={"OUR PROGRAM"} SubTitle={"What We Offer"} />
+    
     <div className= 'container'>
       <div className='program'>
         <img src = {Eng}></img>
