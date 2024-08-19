@@ -2,6 +2,7 @@ import React from 'react'
 import { IoMailSharp } from "react-icons/io5";
 import { FaPhoneAlt } from "react-icons/fa";
 import { TiLocation } from "react-icons/ti";
+import { MdLocalPostOffice } from "react-icons/md";
 
 const Contact = () => {
   return (
@@ -23,6 +24,7 @@ const Contact = () => {
             <input name = "email" placeholder='Enter Email' className='p-[0.7rem] bg-Dom bg-opacity-60 placeholder-white'></input>
             <label className='mt-4'>Write your messages here</label>
             <textarea rows={6} className='p-[0.7rem] bg-Dom bg-opacity-60 placeholder-white' placeholder='Enter your message'></textarea>
+            <button className='flex space-x-2 border bg-Accent w-40 h-11 mt-5 text-white items-center justify-center rounded-3xl border-none'><span>Submit Now</span><MdLocalPostOffice /></button>
         </form>
       </div>
     </div>
