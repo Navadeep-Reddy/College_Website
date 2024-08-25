@@ -26,7 +26,7 @@ const Testi = () => {
     slider.current.style.transform =  `translateX(${X_Value}%)`
   }  
   return (
-    <div className='testimonials '>
+    <div className='testimonials' name = 'Test'>
         <FaArrowCircleLeft className='left-butt text-Accent' onClick={MoveLeft}/>
         <FaArrowCircleRight className='right-butt text-Accent' onClick={MoveRight}/>
         <div className='slider'>

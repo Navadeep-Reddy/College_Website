@@ -15,7 +15,7 @@ const Academics = () => {
   return (
     <>
     
-    <div className= 'container'>
+    <div className= 'container' name = "Prog">
       <div className='program'>
         <img src = {Eng}></img>
         <div className='caption '>

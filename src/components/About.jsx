@@ -4,7 +4,7 @@ import '/src/Styles/About.css'
 import { FaCirclePlay } from "react-icons/fa6";
 const About = () => {
   return (
-    <div className='mt-20 w-2/3 mx-auto flex container '>
+    <div className='mt-20 w-2/3 mx-auto flex container ' name = "abt">
       <div className='about-left '>
         <img src = {AboutImg} className='border rounded-xl imag'></img>
         <div className='play-icon'><FaCirclePlay className='play-butt'/></div>    

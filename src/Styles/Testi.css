@@ -1,5 +1,6 @@
 .testimonials{
-    margin: 80px 15%;
+    margin: 0 15%;
+    margin-top: 40px;
     position: relative;
     display: flex;
 }
